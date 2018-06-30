@@ -12,11 +12,17 @@ python:
   - '3.6'
   - 'pypy'
   - 'pypy3.5'
+  - 'lint'
 
 env:
   matrix:
     - COVERAGE_COVERAGE=no
     - COVERAGE_COVERAGE=yes
+
+matrix:
+  exclude:
+    - python: lint
+    - env: COVERAGE_COVERAGE=yes
 
 install:
   - pip install -r requirements/ci.pip
