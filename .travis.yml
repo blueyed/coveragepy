@@ -1,5 +1,5 @@
 # Tell Travis what to do
-# https://travis-ci.org/nedbat/coveragepy
+# https://travis-ci.com/nedbat/coveragepy
 
 language: python
 
@@ -18,11 +18,6 @@ env:
   matrix:
     - COVERAGE_COVERAGE=no
     - COVERAGE_COVERAGE=yes
-
-matrix:
-  exclude:
-    - python: lint
-    - env: COVERAGE_COVERAGE=yes
 
 install:
   - pip install -r requirements/ci.pip
