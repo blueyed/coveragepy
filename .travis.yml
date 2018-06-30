@@ -12,7 +12,6 @@ python:
   - '3.6'
   - 'pypy'
   - 'pypy3.5'
-  - 'lint'
 
 env:
   matrix:
